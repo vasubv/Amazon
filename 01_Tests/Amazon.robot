@@ -6,7 +6,7 @@ Library  SeleniumLibrary
 ${Browser}  Chrome
 ${URL}  https://www.amazon.com/
 
-# Author : Aryan Vasudevan is in KPMG
+# Author : Arjun V is in KPMG
 *** Test Cases ***
 TC #01 : User must sign in to checkout
     [Documentation]  This is a test case to open up the browser in ie
