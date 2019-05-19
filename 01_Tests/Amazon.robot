@@ -13,7 +13,7 @@ TC #01 : User must sign in to checkout
     # 1. Open the amazon link in chrome browser
     open browser  ${URL}    ${Browser}
     maximize browser window
-    sleep  3s
+    sleep  3s   # this causes  delay of 3 secs
 
     # 2. Search for item - Ferrari 458
     wait until page contains  Your Amazon.com               # Ensure page is loaded fully for the script
