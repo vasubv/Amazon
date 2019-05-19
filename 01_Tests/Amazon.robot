@@ -26,7 +26,7 @@ TC #01 : User must sign in to checkout
 
     click element  xpath://*[@id="search"]/div[1]/div[2]/div/span[3]/div[1]/div[5]/div/div/div/div[2]/div[2]/div/div[1]/h2/a
 
-Feature-1 Usecases
+Feature-1 Testcases
     log  Feature 1 log
 
     # Wait for 3 seconds and close
