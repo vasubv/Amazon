@@ -10,12 +10,12 @@ ${URL}  https://www.amazon.com/
 TC #01 : User must sign in to checkout
     [Documentation]  This is a test case to open up the browser in ie
     [Tags]  Smoke
-    # 1. Open the amazon link in chrome
+    # 1. Open the amazon link in chrome browser
     open browser  ${URL}    ${Browser}
     maximize browser window
     sleep  3s
 
-    # 2. Search for Ferrari 458
+    # 2. Search for many items Ferrari 458
     wait until page contains  Your Amazon.com               # Ensure page is loaded fully for the script
     input text  id:twotabsearchtextbox    Ferrari 458       # Enter search text "Ferari 58"
     click button    class:nav-input                         # Click the Search button
