@@ -1,0 +1,10 @@
+*** Settings ***
+Library  SeleniumLibrary
+
+*** Keywords ***
+m_GotoURL()
+    go to  http://www.amazon.com
+
+m_WaitForPageToLoad()
+    sleep  3s   # this causes  delay of 3 secs
+    wait until page contains  Your Amazon.com               # Ensure page is loaded fully for the script
