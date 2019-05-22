@@ -1,9 +1,14 @@
 *** Settings ***
 Library  SeleniumLibrary
 
+Resource  ../variables.robot
+
+*** Variables ***
+
+
 *** Keywords ***
 m_GotoURL()
-    go to  http://www.amazon.com
+    go to  ${START_URL}
 
 m_WaitForPageToLoad()
     sleep  3s   # this causes  delay of 3 secs

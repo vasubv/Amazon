@@ -9,8 +9,8 @@ m_WaitForSearchToFinish()
     wait until page contains  results for "Ferrari 458"     # Wait till search results fully load
 
 m_SelectFromSearchResults()
-    click element  xpath://*[@id="search"]/div[1]/div[2]/div/span[3]/div[1]/div[1]/div/div/div/div[2]/div[1]/div/div/span/a/div
-
+    #click element  xpath://*[@id="search"]/div[1]/div[2]/div/span[3]/div[1]/div[1]/div/div/div/div[2]/div[1]/div/div/span/a/div
+    click element  xpath://*[@id="search"]/div[1]/div[2]/div/span[3]/div[1]/div[1]/div/div/div/div/div/div[2]/div[1]/div/div/span/a/div
 
 
 
