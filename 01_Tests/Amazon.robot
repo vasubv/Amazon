@@ -4,7 +4,7 @@ Resource  ../02_Resources/KWRD/kwrd_Common.robot
 Resource  ../02_Resources/variables.robot
 
 # Set of actions to be performed before start and after execution of ALL test cases in this suite
-Suite Setup     kwrd_Common.Suite Start     ${ABOUT_BLANK}     ${BROWSER}     # Pass url, browser to keyword
+Suite Setup     kwrd_Common.Suite Start     ${g_ABOUT_BLANK}     ${g_BROWSER}     # Pass url, browser to keyword
 Suite Teardown  kwrd_Common.Suite End       # Wait 3s and close the browser
 
 # Set of actions to be performed before start and after execution of each test case in this suite
