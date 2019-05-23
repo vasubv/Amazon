@@ -1,9 +1,10 @@
 *** Settings ***
 Resource  ../02_Resources/KWRD/kwrd_Amazon.robot
 Resource  ../02_Resources/KWRD/kwrd_Common.robot
+Resource  ../02_Resources/variables.robot
 
 # Set of actions to be performed before start and after execution of ALL test cases in this suite
-Suite Setup     kwrd_Common.Suite Start     # Open the amazon link in chrome browser
+Suite Setup     kwrd_Common.Suite Start     ${ABOUT_BLANK}     ${BROWSER}     # Pass url, browser to keyword
 Suite Teardown  kwrd_Common.Suite End       # Wait 3s and close the browser
 
 # Set of actions to be performed before start and after execution of each test case in this suite
@@ -27,4 +28,8 @@ TC #01 : User Searches Product and checkout
     kwrd_Amazon.Proceed To Checkout         # 4. Proceed to checkout
 
 TC #02 : Logging some comments
-    log  Log This is the last test
+    log     @{ARRAY}[0]
+    log     @{ARRAY}[1]
+    log     @{ARRAY}[2]
+    log     Command line to pass values to the global variables
+    log     robot -d 02_Results -v SEARCH_ITEM:"Ferrari 458" -N "Amazon Shopping Cart" 01_Tests/Amazon.robot
