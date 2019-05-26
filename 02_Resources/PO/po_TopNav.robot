@@ -8,6 +8,7 @@ ${m_SEARCH_BUTTON}          class:nav-input
 
 *** Keywords ***
 m_SearchProduct()
+    log     po_TopNav.m_SearchProduct()
     input text      ${m_TOPNAV_SEARCH_BOX}    ${g_SEARCH_ITEM}    # Enter search text "Ferari 458"
-    click button    ${m_SEARCH_BUTTON}                          # Click the Search button
+    click button    ${m_SEARCH_BUTTON}                            # Click the Search button
 
